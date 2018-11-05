@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div></div>
+	<script type="text/javascript">
+	// 冒泡排序:
+	var arr = [6,12,7,9,7,3,3,15];
+	for (var i = 0; i < arr.length-1; i++) {
+		for (var j = 0; j < arr.length-1-i; j++) {
+			if (arr[j]>arr[j+1]) {
+				var temp = arr[j]
+				arr[j] = arr[j+1]
+				arr[j+1] = temp
+			};
+		};
+	};
+	console.log(arr)
+
+	// 去重
+	var arrs = []
+	for (var i = 0; i < arr.length; i++) {
+		if (arrs.indexOf(arr[i])==-1) {
+			arrs.push(arr[i])
+		};
+	};
+	console.log(arrs)
+
+	
+	</script>
+</body>
+</html>
