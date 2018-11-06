@@ -1,3 +1,4 @@
+// Axios简单封装
 import axios from 'axios';
 import qs from 'qs';
 
